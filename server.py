@@ -2,7 +2,7 @@
 from sanic import Sanic, response
 from sanic.response import text
 
-from get_eight_code.get_life import YEAR_MAP, MONTH_MAP, DAY_MAP, HOUR, LIFE_MAP
+from get_life import YEAR_MAP, MONTH_MAP, DAY_MAP, HOUR, LIFE_MAP
 
 app = Sanic(__name__)
 
