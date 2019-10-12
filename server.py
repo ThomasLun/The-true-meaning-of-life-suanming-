@@ -7,8 +7,8 @@ from get_life import YEAR_MAP, MONTH_MAP, DAY_MAP, HOUR, LIFE_MAP
 app = Sanic(__name__)
 
 @app.route("/")
-async def test(request):
-    return text('Hello world!')
+async def home(request):
+    return text('称骨算命法，相传是唐朝周易大师袁天罡先生所创，其法将人的生辰八字，即出生的农历年月日时计算相应的“骨重”，然后根据“称骨”的总值来进行算命。(古代的重量单位：1斤=10两，1两=10钱)')
 
 
 @app.route("/suan_ming",methods=["POST"])
